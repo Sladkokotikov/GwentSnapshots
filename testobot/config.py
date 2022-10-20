@@ -37,8 +37,8 @@ default_tier_font_size = 54
 
 ability_w = 80
 
-font = "Gwent Font.ttf"
-background_path = 'background.png'
+font = "testobot/Gwent Font.ttf"
+background_path = 'testobot/background.png'
 
 token = "5204460564:AAGa5muemluK35fyrypqmUL7b3jiulWxo9Y"
 log_chat_id = '@sladkologi'
