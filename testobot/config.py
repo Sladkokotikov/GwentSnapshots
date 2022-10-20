@@ -20,7 +20,7 @@ deck_h = 80
 deck_description_margin = 6
 
 default_author_font_size = 72
-default_deck_font_size = 48
+default_deck_font_size = 42
 
 tier_w = {1: 640, 2: 380}
 tier_h = 60
