@@ -1,1 +1,42 @@
+greetings=Hi! I can help you to make a good-looking meta snapshot!
+Type /make_snapshot to jump right in or /help to get help. What a coincidence!;
+help=To change language just send 'ru' or 'en'
+/help shows you this message
+/usage_example sends you commands that you can just forward back here and get your first meta snapshot in few seconds
+/make_snapshot creates the new meta snapshot instance. You can't create snapshots until you have published or discarded the previous one
+Once you've created a new snapshot, send the title which will be shown on top of it
+/add_tier adds a new tier. Be sure to provide its name in the next message
 
+If you already added a tier, just send deck links with short description
+(for example, https://www.playgwent.com/en/decks/guides/355316 Kiki kekker)
+You can add as many tiers and decks as you want, but I recommend you to have about 16 decks at all and split them into tiers of rational size
+/preview_text sends you text version of your snapshot
+/preview_photo sends you picture of your snapshot
+/sign signs your snapshot, your username wil be displayed on a final picture (signed by default)
+/unsign unsigns your snapshot if you want to remain anonymous
+/publish saves the results, sends you all that you've done (in fact /preview_text and /preview_photo) and releases snapshot slot for future use
+/discard deletes everything that you've done and releases snapshot slot for future use. Be careful.
+
+/future can show you everything I want to implement. This is my todo-list
+
+And of course can always contact me (developer) - I am @sladkokotikov ❤️;
+lang_choice_success=Language set successfully!;
+future=Tier settings maybe =/;
+
+snapshot_already_exists=Snapshot already exists. Publish or discard it to create a new one;
+send_title=Send me the title for this snapshot;
+snapshot_title_set=Title successfully set!;
+no_answer_needed=Wait, mate! I don't need any answers (at least for now) 🤷‍♂️;
+tier_title_set=New tier added successfully!;
+send_tier_title=Send me the title of a new tier;
+snapshot_dont_exist=Oops! You haven't created any snapshot yet!;
+can_send_decks=Now you can send me a deck link with a short description (separated by a space);
+can_send_tiers=Now you can add tiers (/add_tier);
+signed_success=Signed successfully!;
+unsigned_success=Unsigned successfully!;
+discarded_success=Discarded successfully, you can make new snapshot!;
+published_success=Published successfully, you can make new snapshot!;
+deck_added=Deck added successfully!;
+after_deck=You can /preview_photo, /preview_text, /preview, /add_tier, add deck.
+If you are satisfied, you can /publish. If not, you can /discard;
+usage_script_end=You can forward these messages to me and see what happens. For more information check /help
