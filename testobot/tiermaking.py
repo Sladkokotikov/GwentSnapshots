@@ -129,14 +129,14 @@ class Snapshot:
                 cursor_x -= (config.tier_w[columns] // 2 - tier_w // 2)
                 cursor_y += config.tier_h + config.tier_decks
                 for deck in tier.decks:
-                    faction_back = Image.open('backgrounds/' + deck.faction + '.jpg')
+                    faction_back = Image.open('testobot/backgrounds/' + deck.faction + '.jpg')
                     faction_back = faction_back.resize((config.deck_w[columns],
                                                         int(faction_back.height / faction_back.width * config.deck_w[
                                                             columns])))
                     faction_back = faction_back.crop((0, 0, config.deck_w[columns], config.deck_h))
                     img.paste(faction_back, (cursor_x, cursor_y))
 
-                    ability_img = Image.open('abilities/' + deck.ability + '.png').resize(
+                    ability_img = Image.open('testobot/abilities/' + deck.ability + '.png').resize(
                         (config.ability_w, config.ability_w))
                     img.paste(ability_img, (cursor_x - config.ability_w // 2, cursor_y), ability_img)
                     deck_font = scale_font(deck.description,
@@ -173,7 +173,7 @@ class Snapshot:
                       stroke_width=2,
                       stroke_fill=(0, 0, 0))
         img = img.crop((0, 0, img_w, max_cursor_y + h + config.down_composer))
-        path = 'snapshots/' + self.author + '.png'
+        path = 'testobot/snapshots/' + self.author + '.png'
         img.save(path)
         return open(path, 'rb')
 
